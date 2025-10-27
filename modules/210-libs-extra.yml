@@ -1,4 +1,4 @@
-name: gnome-common
+name: libs-extra
 type: apt
 sources:
   - packages:
