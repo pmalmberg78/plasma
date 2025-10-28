@@ -1,6 +1,6 @@
 name: Vanilla Desktop
 id: desktop
-vibversion: 1.0.4
+vibversion: 1.0.6
 
 stages:
 - id: build
@@ -128,4 +128,3 @@ stages:
     commands:
       - rm -rf /tmp/*
       - rm -rf /var/tmp/*
-      - rm -rf /sources
