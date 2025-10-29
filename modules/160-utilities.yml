@@ -11,3 +11,11 @@ sources:
     - flatpak
     - gnome-software-plugin-flatpak
     - locales-all
+    
+    - heif-gdk-pixbuf
+    - heif-thumbnailer
+
+    - gnome-user-docs
+    - rygel
+    - webp-pixbuf-loader
+    - yelp

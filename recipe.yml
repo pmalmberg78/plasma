@@ -52,10 +52,9 @@ stages:
       - modules/00-vanilla-sideload.yml
       - modules/00-vanilla-updates-utility.yml
       - modules/00-vanilla-prime-utility.yml
-      - modules/02-waydroid-modules.yml
+      # - modules/02-waydroid-modules.yml
       - modules/03-fswarn.yml
       - modules/10-vanilla-abroot-rollback-notifier.yml
-      - modules/20-gnome-core.yml
       - modules/21-gnome-control-center.yml
       - modules/30-gnome-essentials.yml
       - modules/35-nautilus-terminal-rightclick.yml
@@ -63,7 +62,6 @@ stages:
       - modules/50-laptop-goodies.yml
       - modules/60-media.yml
       - modules/80-printers.yml
-      - modules/90-3d-utils.yml
       - modules/100-accessibility.yml
       - modules/110-fonts.yml
       - modules/120-network.yml
@@ -73,41 +71,17 @@ stages:
       - modules/140-password.yml
       - modules/160-utilities.yml
       - modules/170-gnome-software-vso-plugin.yml
-      - modules/200-gnome-common.yml
       - modules/210-libs-extra.yml
-      - modules/300-hide-image-magick.yml
-      - modules/997-ensure-exec-hooks.yml
-      - modules/998-vanilla-cleanup.yml
-      - modules/999-pkg-cleanup.yml
-      - modules/999-clear-first-setup-steps-unit.yml
+      - modules/997-misc-setup.yml
+      - modules/999-cleanup.yml
 
-  - name: blackbox-rescue
-    type: shell
-    commands:
-    - echo "\nActions=rescue;\n[Desktop Action rescue]\nName=Rescue Mode\nExec=blackbox-terminal -c /bin/bash\nIcon=com.raggesilver.BlackBox" >> /usr/share/applications/com.raggesilver.BlackBox.desktop
-
-  - name: fix-gdm-permissions-service
-    type: shell
-    commands:
-    - mkdir -p /etc/systemd/system/multi-user.target.wants/
-    - ln -s /usr/lib/systemd/system/fix-gdm-permissions.service /etc/systemd/system/multi-user.target.wants/
-
-  - name: gnome-software-setup
-    type: shell
-    commands:
-    - rm /usr/lib/*/gnome-software/plugins-*/libgs_plugin_packagekit.so
-
-  - name: cleanup
+  - name: cleanup-and-sysconf-setup
     type: shell
     commands:
     - apt autoremove -y
     - apt clean
     - lpkg --lock
-
-  - name: sysconf-setup
-    type: shell
-    commands:
-      - rsync -a /etc/ /sysconf/
+    - rsync -a /etc/ /sysconf/
 
   - name: fsguard
     type: fsguard

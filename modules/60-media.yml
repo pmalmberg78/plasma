@@ -11,3 +11,8 @@ sources:
     - gstreamer1.0-plugins-base-apps
     - gstreamer1.0-pulseaudio
     - libavcodec-extra
+
+    - mesa-vdpau-drivers
+    - mesa-vulkan-drivers
+    - steam-devices
+    - vdpau-driver-all
