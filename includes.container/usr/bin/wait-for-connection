@@ -1,7 +1,7 @@
 #!/bin/bash
 
 is_network_online() {
-    nmcli -t g | grep -q "connected"
+    nmcli -t g | grep "connected" | grep -q ":full:"
     return $?
 }
 
