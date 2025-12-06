@@ -65,7 +65,7 @@ stages:
       - modules/60-media.yml
       - modules/80-printers.yml
       - modules/100-accessibility.yml
-      - modules/110-fonts.yml
+      #- modules/110-fonts.yml
       #- modules/120-network.yml
       - modules/121-disable-ssh-daemon.yml
       - modules/130-plymouth.yml
