@@ -1,11 +1,11 @@
 {
     "autoRepair": true,
-    "maxParallelDownloads": 2,
+    "maxParallelDownloads": 5,
 
     "registry": "ghcr.io",
     "registryService": "registry.ghcr.io",
     "registryAPIVersion": "v2",
-    "name": "vanilla-os/desktop",
+    "name": "pmalmberg78/plasma",
     "tag": "main",
 
     "iPkgMngPre": "lpkg --unlock",
