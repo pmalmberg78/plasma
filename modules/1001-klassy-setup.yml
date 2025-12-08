@@ -1,0 +1,19 @@
+name: klassy-setup
+type: shell
+sources:
+  - type: git
+    url: https://github.com/paulmcauley/klassy.git
+    tag: 6.4.breeze6.4.0
+    paths:
+    - klassy
+commands:
+  - /sources/plasma-rice/klassy/install.sh
+  
+
+
+
+
+
+
+
+  
