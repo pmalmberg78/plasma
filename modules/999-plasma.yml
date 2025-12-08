@@ -30,3 +30,5 @@ sources:
     - kde-config-gtk-style
     - kde-config-gtk-style-preview
     - kdeconnect
+
+    - accountsservice
