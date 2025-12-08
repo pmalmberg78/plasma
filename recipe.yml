@@ -53,7 +53,7 @@ stages:
       - modules/03-fswarn.yml
       - modules/10-vanilla-abroot-rollback-notifier.yml
       - modules/50-laptop-goodies.yml
-      - modules/51-install-debs.yml
+#      - modules/51-install-debs.yml
       - modules/60-media.yml
       - modules/80-printers.yml
       - modules/100-accessibility.yml
