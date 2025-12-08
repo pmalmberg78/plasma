@@ -26,7 +26,6 @@ sources:
     - xdg-desktop-portal-kde
     - xdg-desktop-portal-gtk
 
-    - kde-gtk-config
     - kde-config-gtk-style
     - kde-config-gtk-style-preview
     - kdeconnect
