@@ -64,6 +64,7 @@ stages:
       - modules/990-misc-setup.yml
       - modules/991-vanilla-cleanup.yml
 #      - modules/992-cleanup.yml
+      - modules/995-util-packages.yml
       - modules/999-plasma.yml
       - modules/1003-twingate-client.yml
 
