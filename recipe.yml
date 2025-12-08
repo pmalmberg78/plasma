@@ -52,7 +52,6 @@ stages:
       - modules/00-vanilla-prime-utility.yml
       - modules/01-workaround-packages.yml
       - modules/01-workarounds.yml
-      - modules/01-plasma.yml
       - modules/03-fswarn.yml
       - modules/10-vanilla-abroot-rollback-notifier.yml
       - modules/50-laptop-goodies.yml
@@ -63,9 +62,10 @@ stages:
       - modules/121-disable-ssh-daemon.yml
       - modules/130-plymouth.yml
       - modules/131-plymouth-theme-vanilla.yml
-      - modules/997-misc-setup.yml
-      - modules/998-vanilla-cleanup.yml
-      - modules/999-cleanup.yml
+      - modules/990-misc-setup.yml
+      - modules/991-vanilla-cleanup.yml
+      - modules/992-cleanup.yml
+      - modules/999-plasma.yml
 
   - name: cleanup-and-sysconf-setup
     type: shell
