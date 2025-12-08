@@ -29,7 +29,7 @@ sources:
     - plasma-vault
     - plasma-workspace
     - plasma-runners-addons
-    
+
     - kwin-wayland
     - kwin-addons
     - plasma-disks
@@ -37,7 +37,7 @@ sources:
     - kwalletmanager
 
     - sddm-theme-breeze
-    
+
     - xdg-desktop-portal
     - xdg-desktop-portal-kde
     - xdg-desktop-portal-gtk
@@ -47,4 +47,3 @@ sources:
     - kdeconnect
 
     - accountsservice
-
