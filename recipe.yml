@@ -63,7 +63,7 @@ stages:
       - modules/131-plymouth-theme-vanilla.yml
       - modules/990-misc-setup.yml
       - modules/991-vanilla-cleanup.yml
-      - modules/992-cleanup.yml
+#      - modules/992-cleanup.yml
       - modules/999-plasma.yml
 
   - name: cleanup-and-sysconf-setup
