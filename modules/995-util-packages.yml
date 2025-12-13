@@ -7,7 +7,7 @@ sources:
     - zsh
     - fzf
     - zoxide
-#    - linux-headers-amd64
-#    - zfsutils-linux
-#    - zfs-dkms
-#    - zfs-zed
+    - linux-headers-amd64
+    - zfsutils-linux
+    - zfs-dkms
+    - zfs-zed
